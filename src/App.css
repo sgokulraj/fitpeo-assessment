@@ -1,0 +1,66 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  :root {
+    --sidebar-color: #fff;
+    --primary-color: #695cfe;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    --tran-08: all 0.8s ease;
+
+
+  }
+
+
+  .home {
+    position: relative;
+    left: 190px;
+    height: 100vh;
+    width: calc(100% - 190px);
+    transition: var(--tran-05);
+    padding: 20px 30px;
+
+  }
+
+  .home .text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sidebar.close ~ .home {
+    left: 70px;
+    width: calc(100% - 70px);
+  }
+
+  .searchBox {
+    background-color: var(--sidebar-color);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding-left: 15px;
+  }
+
+  .searchBox input {
+    font-size: 14px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 3px;
+  }

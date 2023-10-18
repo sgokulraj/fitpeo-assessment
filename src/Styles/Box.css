@@ -1,0 +1,104 @@
+#boxes {
+    margin: 30px 0px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    #boxes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #boxes {
+        display: block;
+    }
+    .box{
+        margin-top: 30px;
+    }
+}
+
+
+.box {
+    background-color: var(--sidebar-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    /* flex-basis: 25%; */
+    /* width: 100%; */
+    /* max-width: fit-content; */
+}
+
+/* .box .imgContainer {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.5);
+} */
+
+.box .imgContainer {
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.sales .imgContainer {
+    background-color: #ffbebe
+}
+
+.earning .imgContainer {
+    /* background-color: #8df1ba; */
+    /* background-color: #b6ffd7; */
+    background-color: #d4ffe8;
+}
+
+.orders .imgContainer {
+    background-color: #ead4ff;
+}
+
+.wallet .imgContainer {
+    background-color: #c5ceff;
+}
+
+.box img {
+    max-width: 100%;
+    width: 80px;
+    /* height: 80px; */
+    height: auto;
+}
+
+.boxDescription .boxHeading {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    margin: 0;
+}
+
+.boxDescription h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.boxDescription .boxInfo {
+    font-size: 12px;
+    margin: 0;
+}
+
+.boxDescription .boxInfo span {
+    color: green;
+    font-weight: bold;
+}
+
+.boxDescription .boxInfo.reduce span {
+    color: red;
+    font-weight: bold;
+}

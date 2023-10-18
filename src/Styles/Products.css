@@ -1,0 +1,50 @@
+#products {
+    background-color: var(--sidebar-color);
+    padding: 20px 20px;
+    border-radius: 6px;
+}
+
+#products .productHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productHeading>div:first-of-type {
+    display: flex;
+    gap: 10px;
+}
+
+.productFilter {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    max-width: 150px;
+    height: 30px;
+}
+
+.productFilter input {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.singleProduct {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+
+.productImage {
+    width: 75px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.boxHeading {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    margin: 0;
+    text-align: justify !important;
+}
